@@ -7,3 +7,12 @@
 # Формат выходных данных: Необходимо вывести сумму чисел написанных на кирпичах.
 
 # TODO: your code here
+n = int(input("число:"))
+i = 1
+sum = 0
+sum_t = 0
+while i <= n:
+    sum_t = i*i
+    sum = sum+sum_t
+    i +=1
+print("сумма", sum)
