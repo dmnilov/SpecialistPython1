@@ -2,3 +2,10 @@
 # Вывести на экран сумму всех элементов.
 
 # TODO: your code here
+my_numbers = [-5, 4, 3, -10, 8, 9]
+sum_num=0
+for i in my_numbers:
+    sum_num += i
+print (sum_num)
+
+#если внести print в тело цикла, можно увидеть как менялись значения
