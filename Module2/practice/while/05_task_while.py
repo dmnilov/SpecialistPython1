@@ -18,3 +18,20 @@
 
 
 # TODO: your code here
+
+line = 8
+x = 0
+y = 0
+
+while y < line:
+    while x < line:
+        if y == x or y == line -1 - x:
+            print("#", end="")
+            x +=1
+        else:
+            print(" ", end="")
+            x +=1
+    x=0
+    print()
+    y +=1
+
