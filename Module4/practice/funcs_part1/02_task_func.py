@@ -3,13 +3,15 @@
 # Пример палиндрома: 34543
 # * попробуйте решить данную задачу, не преобразуя число к строке
 
+
 def palindrome(number):
-    pass
-
-
-# Тестируем функцию
-print(palindrome(3454))
-print(palindrome(3443))
-print(palindrome(1234541))
-print(palindrome(1234321))
-print(palindrome(77777))
+    number2 = number
+    res = 0
+    while number2 > 0:
+        test = number2 % 10
+        res = res*10+test
+        number2 = number2 // 10
+    if res == number:
+        return "true"
+    else:
+        return "false"
