@@ -5,3 +5,14 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+numbers =[2, -5, 8, 9, -25, 25, 4]
+new_list = []
+
+for i in numbers:
+    j = i ** (1 / 2)
+    if i > 0 and j%1 == 0:
+
+        new_list.append(int(j))
+
+print(new_list)
+
